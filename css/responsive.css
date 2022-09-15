@@ -4,14 +4,61 @@
 Sopra i 768px e fino ai 1160px il layout è un po’ troppo “rigido”! Come mai? 
 Aggiungiamo una media query per sistemare il layout e non far comparire la scrollbar orizzontale. */
 
-@media screen and (max-width: 768px){
-    body{
-        background: green;
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 480px){
-    body{
-        background: red;
-    }
+@media screen and (max-width: 480px) {
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+  }
+
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Width container */
+
+  .lessons .col {
+    width: 70%;
+  }
+
+  .steps .col {
+    width: 70%;
+  }
+
+  .why-us .col-left {
+    width: 70%;
+  }
+
+  .why-us .col-right {
+    width: 70%;
+  }
+
+  /* Fonts */
+
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+
+ .steps .text{
+    font-weight: 600;
+  }
+
+  /* Background-color */
+  .why-us{
+    background-color: #222222;
+  }
 }
