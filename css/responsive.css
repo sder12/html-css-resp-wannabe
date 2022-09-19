@@ -27,18 +27,9 @@
 
   /* Width container */
 
-  .lessons .col {
-    width: 70%;
-  }
-
-  .steps .col {
-    width: 70%;
-  }
-
-  .why-us .col-left {
-    width: 70%;
-  }
-
+  .lessons .col,
+  .steps .col,
+  .why-us .col-left,
   .why-us .col-right {
     width: 70%;
   }
@@ -62,5 +53,11 @@
   /* Background-color */
   .why-us {
     background-color: #222222;
+    margin-bottom: 0;
+    padding-top: 3rem;
+  }
+  /* cè una barra  */
+  .steps{
+    margin-bottom: 0;
   }
 }
