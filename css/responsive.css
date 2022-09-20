@@ -5,6 +5,18 @@
   }
 }
 
+/* Bonus alternativo: prima del mobile/desktop first 
+si usava impostare il range da...a...
+si ripeteva spesso il codice perchè ora con mobile/desktop first
+le proprietà vanno a cascata, prima bisognava ripetere tutto
+NON è PIù UNA BUONA PRATICA DARE DA...A..
+*/
+@media screen and (min-width: 768px)  and (max-width: 1160px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /* Tablet */
 @media screen and (max-width: 768px) {
   .container {
